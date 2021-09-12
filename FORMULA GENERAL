@@ -8,7 +8,7 @@ Hecho por:mrbladek*/
 using namespace std;
 main ()
 {
-	float x1, x2, a, b, c, b1, raiz, potencia1, resta, nombre;
+	float x1, x2, a, b, c, b1, raiz, potencia1, resta;
 	cout << "-FORMULA GENERAL-";
 	cout <<endl;
 	cout <<endl;
@@ -25,9 +25,9 @@ main ()
 	raiz = (sqrt(resta)); // obtenemos la raiz cuadrada de la resta
 	x1 = (b1 + raiz)/2*a; // obtenemos la parte positiva de la formula
 	x2 = (b1 - raiz)/2*a; // obtenemos la parte negativa de la formula
+	cout <<endl;
+	cout <<endl;
 	
-	cout <<endl;
-	cout <<endl;
 	cout << "-RESULTADOS-"; // resultados de la formula general
 	cout <<endl;
 	cout <<endl;
