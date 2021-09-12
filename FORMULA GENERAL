@@ -1,0 +1,39 @@
+/*IPN
+ESIME AZCAPOTZALCO
+Hecho por:mrbladek*/
+/*Realizar un programa que calcule y muestre ambos resultados de la formula general*/
+#include<iostream>
+#include<cmath>
+#include<math.h>
+using namespace std;
+main ()
+{
+	float x1, x2, a, b, c, b1, raiz, potencia1, resta, nombre;
+	cout << "-FORMULA GENERAL-";
+	cout <<endl;
+	cout <<endl;
+	cout <<"Ingresar a: "; 
+	cin >> a; 
+    cout <<"Ingresar b: ";  
+  	cin >> b; 
+  	cout <<"Ingresar c: ";
+  	cin >> c;
+  	
+	b1 = b*-1; // para convertir b en un numero negativo
+  	potencia1 = pow(b,2); // elevamos b al cuadrado
+  	resta = potencia1-(4*a*c); // realizamos la resta dentro de la raiz cuadrada
+	raiz = (sqrt(resta)); // obtenemos la raiz cuadrada de la resta
+	x1 = (b1 + raiz)/2*a; // obtenemos la parte positiva de la formula
+	x2 = (b1 - raiz)/2*a; // obtenemos la parte negativa de la formula
+	
+	cout <<endl;
+	cout <<endl;
+	cout << "-RESULTADOS-"; // resultados de la formula general
+	cout <<endl;
+	cout <<endl;
+	cout << "X1 = " <<x1;
+	cout << endl;
+	cout << "X2 = " <<x2;
+	
+	// fin del programa
+}
